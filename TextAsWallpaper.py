@@ -30,5 +30,3 @@ svg.close()
 desktop_enviorment = os.environ['XDG_CURRENT_DESKTOP']
 if desktop_enviorment == "unity":
 	call(["gsettings","set","org.gnome.desktop.background","picture-uri","file://"+os.getcwd()+"/"+"wallpaper.svg"])
-elif desktop_enviorment == "cinnamon" :
-	call(["gsettings","set","org.cinnamon.desktop.background","picture-uri","file://"+os.getcwd()+"/"+"wallpaper.svg"])
